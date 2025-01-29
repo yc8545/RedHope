@@ -100,7 +100,7 @@
 		  <p class="text-2xl font-bold text-[#FF4B2B]">Find Life-Saving Blood Near You</p>
 		  <p class="text-gray-700">"In moments of need, finding the right help can make all the difference. Search for blood donors near you and be a lifeline for someone today."</p>
 		  <div class="flex justify-center">
-			<button class="bg-[#FF9F00] hover:bg-gradient-to-r hover:from-[#FFA500] hover:to-[#FF4500] text-white font-semibold px-6 py-2 rounded-full shadow-md transition duration-300">
+			<button onclick="navigateToSearch()" class="  bg-[#FF9F00] hover:bg-gradient-to-r hover:from-[#FFA500] hover:to-[#FF4500] text-white font-semibold px-6 py-2 rounded-full shadow-md transition duration-300">
 			  Search
 			</button>
 		  </div>
@@ -165,7 +165,7 @@
 			For donors, just fill out a quick form, and we’ll match you with the nearest blood bank—no need to re-enter your details each time. For blood banks, you can easily register and update available blood types for donors to find.
 			
 			Join us in saving lives—because every drop counts.</p>
-		<a href="/about" class="text-red-400 hover:text-red-200 text-sm">Learn More</a>
+		<a href="About_us.html" class="text-red-400 hover:text-red-200 text-sm">Learn More</a>
 	  </div>
   
 	  <!-- Quick Links Section -->
@@ -176,7 +176,7 @@
 		  <li><a href="/blood-banks" class="text-sm hover:text-red-200 hover:underline">Find Blood Banks</a></li>
 		  <li><a href="donor_form.html" class="text-sm hover:text-red-200 hover:underline">Donate Blood</a></li>
 		  <li><a href="/contact" class="text-sm hover:text-red-200 hover:underline">Contact Us</a></li>
-		  <li><a href="/faq" class="text-sm hover:text-red-200 hover:underline">FAQs</a></li>
+		  <li><a href="FAQ.html" class="text-sm hover:text-red-200 hover:underline">FAQs</a></li>
 		</ul>
 	  </div>
   
@@ -238,6 +238,9 @@
 			}
 			function navigateToBloodBankRegestrationform() {
 				window.location.href = 'blood_bank-form.html';
+			}
+			function navigateToSearch() {
+				window.location.href = 'search_page.html';
 			}
 		</script>
 	  	

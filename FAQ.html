@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FAQs</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+    <div class="max-w-4xl mx-auto p-6">
+        <h1 class="text-3xl font-bold text-center text-red-600 mb-6">Frequently Asked Questions (FAQ)</h1>
+        
+        <!-- Question 1 -->
+        <div class="mb-4">
+            <button class="w-full text-left text-2xl font-semibold text-gray-800 py-2 focus:outline-none" onclick="toggleAnswer('answer1')">
+                1. What is RedHope?
+            </button>
+            <div id="answer1" class="text-lg text-gray-600 mt-2 hidden">
+                RedHope is an innovative platform that connects blood donors with blood banks and donation centers. Our goal is to make blood donation easy, transparent, and accessible to everyone, saving countless lives in the process.
+            </div>
+        </div>
+    
+        <!-- Question 2 -->
+        <div class="mb-4">
+            <button class="w-full text-left text-2xl font-semibold text-gray-800 py-2 focus:outline-none" onclick="toggleAnswer('answer2')">
+                2. How can I become a blood donor?
+            </button>
+            <div id="answer2" class="text-lg text-gray-600 mt-2 hidden">
+                To become a blood donor, simply register on the RedHope platform, fill out the necessary health and contact details, and choose a nearby blood bank or donation center. We’ll help you with the process from there!
+            </div>
+        </div>
+    
+        <!-- Question 3 -->
+        <div class="mb-4">
+            <button class="w-full text-left text-2xl font-semibold text-gray-800 py-2 focus:outline-none" onclick="toggleAnswer('answer3')">
+                3. Is it safe to donate blood?
+            </button>
+            <div id="answer3" class="text-lg text-gray-600 mt-2 hidden">
+                Yes, donating blood is a safe and routine procedure. RedHope partners with certified and safe blood donation centers, ensuring that every donation is conducted with the highest safety standards. Blood banks and donation centers follow strict hygiene protocols to keep donors safe.
+            </div>
+        </div>
+    
+        <!-- Question 4 -->
+        <div class="mb-4">
+            <button class="w-full text-left text-2xl font-semibold text-gray-800 py-2 focus:outline-none" onclick="toggleAnswer('answer4')">
+                4. How does RedHope help me find nearby blood donation centers?
+            </button>
+            <div id="answer4" class="text-lg text-gray-600 mt-2 hidden">
+                Using our platform, you can search for blood donation centers by entering your location. RedHope will provide a list of nearby blood banks with their contact details, blood types available, and appointment options.
+            </div>
+        </div>
+    
+        <!-- Question 5 -->
+        <div class="mb-4">
+            <button class="w-full text-left text-2xl font-semibold text-gray-800 py-2 focus:outline-none" onclick="toggleAnswer('answer5')">
+                5. What should I do if I need blood?
+            </button>
+            <div id="answer5" class="text-lg text-gray-600 mt-2 hidden">
+                If you need blood, simply visit RedHope and search for blood banks in your area. The platform will provide you with all the necessary details, including the type of blood available and how to contact the blood bank or schedule an appointment.
+            </div>
+        </div>
+    
+        <!-- Question 6 -->
+        <div class="mb-4">
+            <button class="w-full text-left text-2xl font-semibold text-gray-800 py-2 focus:outline-none" onclick="toggleAnswer('answer6')">
+                6. Can blood banks register on RedHope?
+            </button>
+            <div id="answer6" class="text-lg text-gray-600 mt-2 hidden">
+                Yes! Blood banks can register and update their available blood types, allowing donors to see which blood banks have what they need. By being part of RedHope, blood banks can reach more people and help save more lives.
+            </div>
+        </div>
+    
+        <!-- Question 7 -->
+        <div class="mb-4">
+            <button class="w-full text-left text-2xl font-semibold text-gray-800 py-2 focus:outline-none" onclick="toggleAnswer('answer7')">
+                7. Is RedHope available worldwide?
+            </button>
+            <div id="answer7" class="text-lg text-gray-600 mt-2 hidden">
+                Currently, RedHope is operational in select regions. However, we are rapidly expanding our network of blood banks and donation centers to reach more locations. Stay tuned for updates as we work to make RedHope available globally!
+            </div>
+        </div>
+    
+        <!-- Question 8 -->
+        <div class="mb-4">
+            <button class="w-full text-left text-2xl font-semibold text-gray-800 py-2 focus:outline-none" onclick="toggleAnswer('answer8')">
+                8. How can I contact RedHope support?
+            </button>
+            <div id="answer8" class="text-lg text-gray-600 mt-2 hidden">
+                If you have any questions or need support, you can reach us through the Contact Us page on the website or email us at support@redhope.com. Our team is ready to assist you with any inquiries you may have.
+            </div>
+        </div>
+    </div>
+    
+    <script>
+        function toggleAnswer(answerId) {
+            const answerElement = document.getElementById(answerId);
+            answerElement.classList.toggle('hidden');
+        }
+    </script>
+    
+    
+</body>
+</html>

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RedHope - Blood Bank Search</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-50 font-sans">
+
+    <div class="container mx-auto p-8 bg-white rounded-xl shadow-lg max-w-4xl mt-[50px]">
+        <header class="text-center mb-8">
+            <h1 class="text-4xl font-bold text-gray-800">Search Blood Banks Near You</h1>
+            <p class="text-gray-500 text-lg">Find available blood banks or hubs for your blood type.</p>
+        </header>
+
+        <div class="search-filters flex justify-between items-center space-x-4 mb-8">
+            <input type="text" id="searchBar" placeholder="Enter your location..." 
+                   class="p-3 w-2/3 border border-gray-300 rounded-lg shadow-md focus:outline-none focus:ring-2 focus:ring-blue-400"
+                   onkeyup="filterResults()">
+            
+            <div class="flex space-x-4">
+                <div>
+                    <label for="bloodType" class="block text-sm font-medium text-gray-700">Blood Type:</label>
+                    <select id="bloodType" onchange="filterResults()"
+                            class="p-3 border border-gray-300 rounded-lg shadow-md focus:outline-none focus:ring-2 focus:ring-blue-400">
+                        <option value="">Select Blood Type</option>
+                        <option value="A+">A+</option>
+                        <option value="A-">A-</option>
+                        <option value="B+">B+</option>
+                        <option value="B-">B-</option>
+                        <option value="AB+">AB+</option>
+                        <option value="AB-">AB-</option>
+                        <option value="O+">O+</option>
+                        <option value="O-">O-</option>
+                    </select>
+                </div>
+
+                <div>
+                    <label for="location" class="block text-sm font-medium text-gray-700">Location:</label>
+                    <select id="location" onchange="filterResults()"
+                            class="p-3 border border-gray-300 rounded-lg shadow-md focus:outline-none focus:ring-2 focus:ring-blue-400">
+                        <option value="">Select Location</option>
+                        <option value="Chandigarh">Chandigarh</option>
+                        <option value="Mohali">Mohali</option>
+                        <option value="Panchkula">Panchkula</option>
+                        <!-- Add more locations as needed -->
+                    </select>
+                </div>
+            </div>
+        </div>
+
+        <div class="results">
+            <h2 class="text-2xl font-bold text-gray-800 mb-4">Available Blood Banks</h2>
+            <ul id="resultsList" class="space-y-4">
+                <!-- List of blood banks will be displayed here -->
+            </ul>
+        </div>
+    </div>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
