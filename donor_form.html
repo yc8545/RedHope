@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Donor Form</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="h-screen bg-gradient-to-r from-[#ff7f7f] via-[#ffb1a7] to-[#ff9b92] bg-opacity-90 ">
+
+    <div class="flex flex-col justify-center m-[50px] ">
+        <div class="m-[30px]">
+            <h1 class="text-center text-6xl font-bold font-serif text-[#333333]">Donor Form</h1>
+        </div>
+        <div class="flex flex-col items-center">
+
+            <!-- PERSONAL INFORMATION -->
+            <div class="text-4xl font-semibold font-sans text-[#333333] text-center m-[50px]">
+                <h3>Personal Information</h3>
+            </div>
+            <div class="flex flex-wrap justify-center gap-6">
+                <!-- First Name -->
+                <div class="w-[500px] flex justify-between items-center mb-6">
+                    <label class="font-semibold font-serif text-lg text-[#333333]" for="first-name">First Name</label>
+                    <input 
+                        class="w-[60%] px-4 py-2 border border-gray-300 rounded-lg text-center shadow-md focus:outline-none focus:ring-2 focus:ring-[#3498db] focus:border-transparent hover:bg-[#f9f9f9] transition duration-300" 
+                        type="text" 
+                        id="first-name" 
+                        placeholder="First Name" 
+                        name="First Name of Donor" 
+                        required>
+                </div>
+                <!-- Last Name -->
+                <div class="w-[500px] flex justify-between items-center mb-6">
+                    <label class="font-semibold font-serif text-lg text-[#333333]" for="last-name">Last Name</label>
+                    <input 
+                        class="w-[60%] px-4 py-2 border border-gray-300 rounded-lg text-center shadow-md focus:outline-none focus:ring-2 focus:ring-[#3498db] focus:border-transparent hover:bg-[#f9f9f9] transition duration-300" 
+                        type="text" 
+                        id="last-name" 
+                        placeholder="Last Name" 
+                        name="Second Name of Donor">
+                </div>
+                <!-- Date of Birth -->
+                <div class="w-[500px] flex justify-between items-center mb-6">
+                    <label class="font-semibold font-serif text-lg text-[#333333]" for="Dob">Date of Birth</label>
+                    <input 
+                        class="w-[60%] px-4 py-2 border border-gray-300 rounded-lg text-center shadow-md focus:outline-none focus:ring-2 focus:ring-[#3498db] focus:border-transparent hover:bg-[#f9f9f9] transition duration-300" 
+                        type="date" 
+                        id="Dob" 
+                        name="Date of Birth" 
+                        required>
+                </div>
+                <!-- Gender -->
+                <div class="w-[500px] flex justify-between items-center mb-6">
+                    <label class="font-semibold font-serif text-lg text-[#333333]" for="gender">Gender</label>
+                    <select 
+                        class="w-[60%] px-4 py-2 border border-gray-300 rounded-lg text-center shadow-md focus:outline-none focus:ring-2 focus:ring-[#3498db] focus:border-transparent hover:bg-[#f9f9f9] transition duration-300" 
+                        name="Gender" 
+                        id="gender" 
+                        required>
+                        <option value="" disabled selected>Select an option</option>
+                        <option value="Male">Male</option>
+                        <option value="Female">Female</option>
+                        <option value="Others">Others</option>
+                    </select>
+                </div>
+                <!-- blood group -->
+                <div class="w-[500px] flex justify-between items-center mb-6">
+                    <label class="font-semibold font-serif text-lg text-[#333333]" for="blood-group">Blood Group</label>
+                    <select 
+                        class="w-[60%] px-4 py-2 border border-gray-300 rounded-lg text-center shadow-md focus:outline-none focus:ring-2 focus:ring-[#3498db] focus:border-transparent hover:bg-[#f9f9f9] transition duration-300" 
+                        name="Blood-group" 
+                        id="blood-group" 
+                        required>
+                        <option value="" disabled selected>Select an option</option>
+                        <option value="A+">A+</option>
+                        <option value="A-">A-</option>
+                        <option value="B+">B+</option>
+                        <option value="B-">B-</option>
+                        <option value="O+">O+</option>
+                        <option value="O-">O-</option>
+                        <option value="AB+">AB+</option>
+                        <option value="AB-">AB-</option>
+                    </select>
+                </div>
+
+                <!-- CONTACT NUMBER  -->
+                <div class="w-[500px] flex justify-between items-center mb-6">
+                    <label class="font-semibold font-serif text-lg text-[#333333]" for="number">Contact Number</label>
+                    <input 
+                        class="w-[60%] px-4 py-2 border border-gray-300 rounded-lg text-center shadow-md focus:outline-none focus:ring-2 focus:ring-[#3498db] focus:border-transparent hover:bg-[#f9f9f9] transition duration-300" 
+                        type="Phone Number Field" 
+                        id="number" 
+                        placeholder="+91 xxxxxxxxxx" 
+                        name="Number">
+                </div>
+
+                <!-- EMAIL ID  -->
+                <div class="w-[500px] flex justify-between items-center mb-6">
+                    <label class="font-semibold font-serif text-lg text-[#333333]" for="mail">E-Mail ID</label>
+                    <input 
+                        class="w-[60%] px-4 py-2 border border-gray-300 rounded-lg text-center shadow-md focus:outline-none focus:ring-2 focus:ring-[#3498db] focus:border-transparent hover:bg-[#f9f9f9] transition duration-300" 
+                        type="email" 
+                        id="mail" 
+                        placeholder="abc@mail.com" 
+                        name="Mail Id">
+                </div>
+
+                <!-- Nationality -->
+                <div class="w-[500px] flex justify-between items-center mb-6">
+                    <label class="font-semibold font-serif text-lg text-[#333333]" for="nationality">Nationality</label>
+                    <input 
+                        class="w-[60%] px-4 py-2 border border-gray-300 rounded-lg text-center shadow-md focus:outline-none focus:ring-2 focus:ring-[#3498db] focus:border-transparent hover:bg-[#f9f9f9] transition duration-300" 
+                        type="text" 
+                        id="nationality" 
+                        name="Nationality" 
+                        required>
+                </div>
+            </div>
+
+            <!-- ADDRESS INFORMATION -->
+            <div class="text-4xl font-semibold font-sans text-[#333333] text-center m-[50px]">
+                <h3>Address Information</h3>
+            </div>
+            <div  class="flex flex-wrap justify-center gap-6">
+                <!-- Full address -->
+                <div class="w-[500px] flex justify-between items-center mb-6">
+                    <label class="font-semibold font-serif text-lg text-[#333333]" for="address">Full Address</label>
+                    <input 
+                        class="w-[60%] px-4 py-2 border border-gray-300 rounded-lg text-center shadow-md focus:outline-none focus:ring-2 focus:ring-[#3498db] focus:border-transparent hover:bg-[#f9f9f9] transition duration-300" 
+                        type="text" 
+                        id="address" 
+                        placeholder="Enter your complete address" 
+                        name="Address" 
+                        required>
+                </div>
+                <!-- City -->
+                <div class="w-[500px] flex justify-between items-center mb-6">
+                    <label class="font-semibold font-serif text-lg text-[#333333]" for="city">City</label>
+                    <input 
+                        class="w-[60%] px-4 py-2 border border-gray-300 rounded-lg text-center shadow-md focus:outline-none focus:ring-2 focus:ring-[#3498db] focus:border-transparent hover:bg-[#f9f9f9] transition duration-300" 
+                        type="Text Field " 
+                        id="city" 
+                        placeholder="Your City" 
+                        name="City" 
+                        required>
+                </div>
+                <!-- State -->
+                <div class="w-[500px] flex justify-between items-center mb-6">
+                    <label class="font-semibold font-serif text-lg text-[#333333]" for="state">State</label>
+                    <select 
+                        class="w-[60%] px-4 py-2 border border-gray-300 rounded-lg text-center shadow-md focus:outline-none focus:ring-2 focus:ring-[#3498db] focus:border-transparent hover:bg-[#f9f9f9] transition duration-300" 
+                        name="State" 
+                        id="state" 
+                        required>
+                        <option value="" disabled selected>Select State</option>
+                        <option value="Andhra Pradesh">Andhra Pradesh</option>
+                        <option value="Arunachal Pradesh">Arunachal Pradesh</option>
+                        <option value="Assam">Assam</option>
+                        <option value="Bihar">Bihar</option>
+                        <option value="Chhattisgarh">Chhattisgarh</option>
+                        <option value="Goa">Goa</option>
+                        <option value="Gujarat">Gujarat</option>
+                        <option value="Haryana">Haryana</option>
+                        <option value="Himachal Pradesh">Himachal Pradesh</option>
+                        <option value="Jharkhand">Jharkhand</option>
+                        <option value="Karnataka">Karnataka</option>
+                        <option value="Kerala">Kerala</option>
+                        <option value="Madhya Pradesh">Madhya Pradesh</option>
+                        <option value="Maharashtra">Maharashtra</option>
+                        <option value="Manipur">Manipur</option>
+                        <option value="Meghalaya">Meghalaya</option>
+                        <option value="Mizoram">Mizoram</option>
+                        <option value="Nagaland">Nagaland</option>
+                        <option value="Odisha">Odisha</option>
+                        <option value="Punjab">Punjab</option>
+                        <option value="Rajasthan">Rajasthan</option>
+                        <option value="Sikkim">Sikkim</option>
+                        <option value="Tamil Nadu">Tamil Nadu</option>
+                        <option value="Telangana">Telangana</option>
+                        <option value="Tripura">Tripura</option>
+                        <option value="Uttar Pradesh">Uttar Pradesh</option>
+                        <option value="Uttarakhand">Uttarakhand</option>
+                        <option value="West Bengal">West Bengal</option>
+                        <option value="Andaman and Nicobar Islands">Andaman and Nicobar Islands</option>
+                        <option value="Chandigarh">Chandigarh</option>
+                        <option value="Dadra and Nagar Haveli and Daman and Diu">Dadra and Nagar Haveli and Daman and Diu</option>
+                        <option value="Delhi">Delhi</option>
+                        <option value="Jammu and Kashmir">Jammu and Kashmir</option>
+                        <option value="Ladakh">Ladakh</option>
+                        <option value="Lakshadweep">Lakshadweep</option>
+                        <option value="Puducherry">Puducherry</option>
+                    </select>
+                </div>
+
+                <!-- Pin Code -->
+                <div class="w-[500px] flex justify-between items-center mb-6">
+                    <label class="font-semibold font-serif text-lg text-[#333333]" for="pincode">Pin Code</label>
+                    <input 
+                        class="w-[60%] px-4 py-2 border border-gray-300 rounded-lg text-center shadow-md focus:outline-none focus:ring-2 focus:ring-[#3498db] focus:border-transparent hover:bg-[#f9f9f9] transition duration-300" 
+                        type="text" 
+                        id="pincode" 
+                        placeholder="xxx - xxx" 
+                        name="Pin Code" 
+                        required>
+                </div>
+
+
+            </div>
+
+            <!-- HEALTH INFORMATION -->
+            <div class="text-4xl font-semibold font-sans text-[#333333] text-center m-[50px]">
+                <h3>Health Information</h3>
+            </div>
+            <div class="flex flex-wrap justify-center gap-6">
+
+                <!-- Have you donated blood before? -->
+                <div class="w-[500px] flex flex-col mb-6">
+                    <label class="font-semibold font-serif text-lg text-[#333333]" for="donated-blood">Have you donated blood before?</label>
+                    <div class="flex justify-around mt-2">
+                        <div>
+                            <input type="radio" id="donated-yes" name="donated-blood" value="Yes" required>
+                            <label for="donated-yes" class="text-[#333333]">Yes</label>
+                        </div>
+                        <div>
+                            <input type="radio" id="donated-no" name="donated-blood" value="No" required>
+                            <label for="donated-no" class="text-[#333333]">No</label>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Date of Last Blood Donation -->
+                <div class="w-[500px] flex justify-between items-center mb-6">
+                    <label class="font-semibold font-serif text-lg text-[#333333]" for="last-donation-date">Date of Last Blood Donation</label>
+                    <input 
+                        class="w-[60%] px-4 py-2 border border-gray-300 rounded-lg text-center shadow-md focus:outline-none focus:ring-2 focus:ring-[#3498db] focus:border-transparent hover:bg-[#f9f9f9] transition duration-300" 
+                        type="date" 
+                        id="last-donation-date" 
+                        name="Last Donation Date">
+                </div>
+
+                <!-- Are you currently taking any medication? -->
+                <div class="w-[500px] flex flex-col mb-6">
+                    <label class="font-semibold font-serif text-lg text-[#333333]" for="medication">Are you currently taking any medication?</label>
+                    <div class="flex justify-around mt-2">
+                        <div>
+                            <input type="radio" id="medication-yes" name="medication" value="Yes" required>
+                            <label for="medication-yes" class="text-[#333333]">Yes</label>
+                        </div>
+                        <div>
+                            <input type="radio" id="medication-no" name="medication" value="No" required>
+                            <label for="medication-no" class="text-[#333333]">No</label>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- If Yes: Details of Medication -->
+                <div class="w-[500px] flex justify-between items-center mb-6">
+                    <label class="font-semibold font-serif text-lg text-[#333333]" for="medication-details">If Yes, provide details:</label>
+                    <input 
+                        class="w-[60%] px-4 py-2 border border-gray-300 rounded-lg text-center shadow-md focus:outline-none focus:ring-2 focus:ring-[#3498db] focus:border-transparent hover:bg-[#f9f9f9] transition duration-300" 
+                        type="text" 
+                        id="medication-details" 
+                        placeholder="Enter details of medication" 
+                        name="Medication Details">
+                </div>
+
+                <!-- Do you have any of the following conditions? -->
+                <div class="w-[500px] flex flex-col mb-6">
+                    <label class="font-semibold font-serif text-lg text-[#333333]">Do you have any of the following conditions?</label>
+                    <div class="flex flex-col mt-2 gap-2">
+                        <div>
+                            <input type="checkbox" id="diabetes" name="conditions" value="Diabetes">
+                            <label for="diabetes" class="text-[#333333]">Diabetes</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" id="hypertension" name="conditions" value="Hypertension">
+                            <label for="hypertension" class="text-[#333333]">Hypertension</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" id="low-hemoglobin" name="conditions" value="Low Hemoglobin">
+                            <label for="low-hemoglobin" class="text-[#333333]">Low Hemoglobin</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" id="others" name="conditions" value="Others">
+                            <label for="others" class="text-[#333333]">Others (Provide details):</label>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- If Others: Details -->
+                <div class="w-[500px] flex justify-between items-center mb-6">
+                    <label class="font-semibold font-serif text-lg text-[#333333]" for="other-details">Details:</label>
+                    <input 
+                        class="w-[60%] px-4 py-2 border border-gray-300 rounded-lg text-center shadow-md focus:outline-none focus:ring-2 focus:ring-[#3498db] focus:border-transparent hover:bg-[#f9f9f9] transition duration-300" 
+                        type="text" 
+                        id="other-details" 
+                        placeholder="Provide details" 
+                        name="Other Details">
+                </div>
+
+                <!-- Recent infections -->
+                <div class="w-[500px] flex flex-col mb-6">
+                    <label class="font-semibold font-serif text-lg text-[#333333]" for="recent-infections">Have you experienced any recent infections (e.g., flu, cold, etc.)?</label>
+                    <div class="flex justify-around mt-2">
+                        <div>
+                            <input type="radio" id="infection-yes" name="recent-infections" value="Yes" required>
+                            <label for="infection-yes" class="text-[#333333]">Yes</label>
+                        </div>
+                        <div>
+                            <input type="radio" id="infection-no" name="recent-infections" value="No" required>
+                            <label for="infection-no" class="text-[#333333]">No</label>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Tattoos or piercings in the last 6 months -->
+                <div class="w-[500px] flex flex-col mb-6">
+                    <label class="font-semibold font-serif text-lg text-[#333333]" for="tattoos-piercings">Do you have any tattoos or piercings done in the last 6 months?</label>
+                    <div class="flex justify-around mt-2">
+                        <div>
+                            <input type="radio" id="tattoo-yes" name="tattoos-piercings" value="Yes" required>
+                            <label for="tattoo-yes" class="text-[#333333]">Yes</label>
+                        </div>
+                        <div>
+                            <input type="radio" id="tattoo-no" name="tattoos-piercings" value="No" required>
+                            <label for="tattoo-no" class="text-[#333333]">No</label>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="text-4xl font-semibold font-sans text-[#333333] text-center m-[50px]">
+                <h3>Passwor and User-Name</h3>
+            </div>
+            <div class="w-[500px] flex flex-col mb-6">
+                <!-- Username -->
+                <label class="font-semibold font-serif text-lg text-[#333333] mb-2" for="username">Username <span class="text-red-500">(Required)</span></label>
+                <input 
+                    class="w-full px-4 py-2 border border-gray-300 rounded-lg text-center shadow-md focus:outline-none focus:ring-2 focus:ring-[#3498db] focus:border-transparent hover:bg-[#f9f9f9] transition duration-300" 
+                    type="text" 
+                    id="username" 
+                    name="username" 
+                    placeholder="Enter your username" 
+                    required>
+                
+                <!-- Password -->
+                <label class="font-semibold font-serif text-lg text-[#333333] mt-4 mb-2" for="password">Password <span class="text-red-500">(Required)</span></label>
+                <input 
+                    class="w-full px-4 py-2 border border-gray-300 rounded-lg text-center shadow-md focus:outline-none focus:ring-2 focus:ring-[#3498db] focus:border-transparent hover:bg-[#f9f9f9] transition duration-300" 
+                    type="password" 
+                    id="password" 
+                    name="password" 
+                    placeholder="Enter your password" 
+                    required>
+                
+                <!-- Confirm Password -->
+                <label class="font-semibold font-serif text-lg text-[#333333] mt-4 mb-2" for="confirm-password">Confirm Password <span class="text-red-500">(Required)</span></label>
+                <input 
+                    class="w-full px-4 py-2 border border-gray-300 rounded-lg text-center shadow-md focus:outline-none focus:ring-2 focus:ring-[#3498db] focus:border-transparent hover:bg-[#f9f9f9] transition duration-300" 
+                    type="password" 
+                    id="confirm-password" 
+                    name="confirm-password" 
+                    placeholder="Re-enter your password" 
+                    required>
+            </div>
+
+
+
+
+
+
+            <!-- Buttons -->
+            <div class="flex justify-around w-[50%] mt-6 mb-[300px]">
+                <button 
+                    type="submit" 
+                    class="bg-[#3498db] text-white font-semibold py-2 px-6 rounded-lg shadow-md hover:bg-[#2980b9] transition duration-300">
+                    Submit
+                </button>
+                <button 
+                    type="reset" 
+                    class="bg-gray-400 text-white font-semibold py-2 px-6 rounded-lg shadow-md hover:bg-gray-500 transition duration-300">
+                    Reset
+                </button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

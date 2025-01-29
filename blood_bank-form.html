@@ -1,0 +1,533 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blood Bank Registration</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="h-screen bg-gradient-to-r from-[#ff7f7f] via-[#ffb1a7] to-[#ff9b92] bg-opacity-90 ">
+    <div  class="flex flex-col justify-center m-[50px] ">
+        <div class="m-[30px]">
+            <h1 class="text-center text-6xl font-bold font-serif text-[#333333]">Blood Bank Registration Form</h1>
+        </div>
+
+
+        <div  class="flex flex-col items-center">
+
+            <!-- INFOMATION -->
+            <div class="text-4xl font-semibold font-sans text-[#333333] text-center m-[50px]">
+                <h3>Required Information</h3>
+            </div>
+            
+            <div class="flex flex-wrap justify-center gap-6">
+                <!-- blood banks name -->
+                <div class="w-[500px] flex justify-between items-center mb-6">
+                    <label class="font-semibold font-serif text-lg text-[#333333]" for=" Blood Bank / Hub Name"> Blood Bank / Hub Name</label>
+                    <input class="w-[60%] px-4 py-2 border border-gray-300 rounded-lg text-center shadow-md focus:outline-none focus:ring-2 focus:ring-[#3498db] focus:border-transparent hover:bg-[#f9f9f9] transition duration-300" 
+                    type="text" 
+                    id=" Blood Bank / Hub Name" 
+                    placeholder=" Blood Bank / Hub Name" 
+                    name=" Blood Bank / Hub Name" 
+                    required>
+                </div>
+                <!-- registration number -->
+                <div class="w-[500px] flex justify-between items-center mb-6">
+                    <label class="font-semibold font-serif text-lg text-[#333333]" for="Registration Number">Registration Number</label>
+                    <input class="w-[60%] px-4 py-2 border border-gray-300 rounded-lg text-center shadow-md focus:outline-none focus:ring-2 focus:ring-[#3498db] focus:border-transparent hover:bg-[#f9f9f9] transition duration-300" 
+                    type="text" 
+                    id="Registration Number" 
+                    placeholder="Registration Number" 
+                    name="Registration Number" 
+                    required>
+                </div>
+                <!-- Full address -->
+                <div class="w-[500px] flex justify-between items-center mb-6">
+                    <label class="font-semibold font-serif text-lg text-[#333333]" for="address">Full Address</label>
+                    <input 
+                        class="w-[60%] px-4 py-2 border border-gray-300 rounded-lg text-center shadow-md focus:outline-none focus:ring-2 focus:ring-[#3498db] focus:border-transparent hover:bg-[#f9f9f9] transition duration-300" 
+                        type="text" 
+                        id="address" 
+                        placeholder="Enter your complete address" 
+                        name="Address" 
+                        required>
+                </div>
+                <!-- City -->
+                <div class="w-[500px] flex justify-between items-center mb-6">
+                    <label class="font-semibold font-serif text-lg text-[#333333]" for="city">City</label>
+                    <input 
+                        class="w-[60%] px-4 py-2 border border-gray-300 rounded-lg text-center shadow-md focus:outline-none focus:ring-2 focus:ring-[#3498db] focus:border-transparent hover:bg-[#f9f9f9] transition duration-300" 
+                        type="Text Field " 
+                        id="city" 
+                        placeholder="Your City" 
+                        name="City" 
+                        required>
+                </div>
+                <!-- State -->
+                <div class="w-[500px] flex justify-between items-center mb-6">
+                    <label class="font-semibold font-serif text-lg text-[#333333]" for="state">State</label>
+                    <select 
+                        class="w-[60%] px-4 py-2 border border-gray-300 rounded-lg text-center shadow-md focus:outline-none focus:ring-2 focus:ring-[#3498db] focus:border-transparent hover:bg-[#f9f9f9] transition duration-300" 
+                        name="State" 
+                        id="state" 
+                        required>
+                        <option value="" disabled selected>Select State</option>
+                        <option value="Andhra Pradesh">Andhra Pradesh</option>
+                        <option value="Arunachal Pradesh">Arunachal Pradesh</option>
+                        <option value="Assam">Assam</option>
+                        <option value="Bihar">Bihar</option>
+                        <option value="Chhattisgarh">Chhattisgarh</option>
+                        <option value="Goa">Goa</option>
+                        <option value="Gujarat">Gujarat</option>
+                        <option value="Haryana">Haryana</option>
+                        <option value="Himachal Pradesh">Himachal Pradesh</option>
+                        <option value="Jharkhand">Jharkhand</option>
+                        <option value="Karnataka">Karnataka</option>
+                        <option value="Kerala">Kerala</option>
+                        <option value="Madhya Pradesh">Madhya Pradesh</option>
+                        <option value="Maharashtra">Maharashtra</option>
+                        <option value="Manipur">Manipur</option>
+                        <option value="Meghalaya">Meghalaya</option>
+                        <option value="Mizoram">Mizoram</option>
+                        <option value="Nagaland">Nagaland</option>
+                        <option value="Odisha">Odisha</option>
+                        <option value="Punjab">Punjab</option>
+                        <option value="Rajasthan">Rajasthan</option>
+                        <option value="Sikkim">Sikkim</option>
+                        <option value="Tamil Nadu">Tamil Nadu</option>
+                        <option value="Telangana">Telangana</option>
+                        <option value="Tripura">Tripura</option>
+                        <option value="Uttar Pradesh">Uttar Pradesh</option>
+                        <option value="Uttarakhand">Uttarakhand</option>
+                        <option value="West Bengal">West Bengal</option>
+                        <option value="Andaman and Nicobar Islands">Andaman and Nicobar Islands</option>
+                        <option value="Chandigarh">Chandigarh</option>
+                        <option value="Dadra and Nagar Haveli and Daman and Diu">Dadra and Nagar Haveli and Daman and Diu</option>
+                        <option value="Delhi">Delhi</option>
+                        <option value="Jammu and Kashmir">Jammu and Kashmir</option>
+                        <option value="Ladakh">Ladakh</option>
+                        <option value="Lakshadweep">Lakshadweep</option>
+                        <option value="Puducherry">Puducherry</option>
+                    </select>
+                </div>
+                <!-- Pin Code -->
+                <div class="w-[500px] flex justify-between items-center mb-6">
+                    <label class="font-semibold font-serif text-lg text-[#333333]" for="pincode">Pin Code</label>
+                    <input 
+                        class="w-[60%] px-4 py-2 border border-gray-300 rounded-lg text-center shadow-md focus:outline-none focus:ring-2 focus:ring-[#3498db] focus:border-transparent hover:bg-[#f9f9f9] transition duration-300" 
+                        type="text" 
+                        id="pincode" 
+                        placeholder="xxx - xxx" 
+                        name="Pin Code" 
+                        required>
+                </div>
+                
+                <!-- contact person name -->
+                <div class="w-[500px] flex justify-between items-center mb-6">
+                    <label class="font-semibold font-serif text-lg text-[#333333]" for="Contact Person's Name"> Contact Person's Name</label>
+                    <input class="w-[60%] px-4 py-2 border border-gray-300 rounded-lg text-center shadow-md focus:outline-none focus:ring-2 focus:ring-[#3498db] focus:border-transparent hover:bg-[#f9f9f9] transition duration-300" 
+                    type="text" 
+                    id="Contact Person's Name" 
+                    placeholder="Contact Person's Name" 
+                    name="Contact Person's Name" 
+                    required>
+                </div>
+
+                <!-- CONTACT NUMBER  -->
+                <div class="w-[500px] flex justify-between items-center mb-6">
+                    <label class="font-semibold font-serif text-lg text-[#333333]" for="number">Contact Number</label>
+                    <input 
+                        class="w-[60%] px-4 py-2 border border-gray-300 rounded-lg text-center shadow-md focus:outline-none focus:ring-2 focus:ring-[#3498db] focus:border-transparent hover:bg-[#f9f9f9] transition duration-300" 
+                        type="Phone Number Field" 
+                        id="number" 
+                        placeholder="+91 xxxxxxxxxx" 
+                        name="Number">
+                </div>
+                <!-- CONTACT NUMBER 2 -->
+                <div class="w-[500px] flex justify-between items-center mb-6">
+                    <label class="font-semibold font-serif text-lg text-[#333333]" for="number2">Alternate Contact Number</label>
+                    <input 
+                        class="w-[60%] px-4 py-2 border border-gray-300 rounded-lg text-center shadow-md focus:outline-none focus:ring-2 focus:ring-[#3498db] focus:border-transparent hover:bg-[#f9f9f9] transition duration-300" 
+                        type="Phone Number Field" 
+                        id="number2" 
+                        placeholder="+91 xxxxxxxxxx" 
+                        name="Number2">
+                </div>
+                <!-- EMAIL ID  -->
+                <div class="w-[500px] flex justify-between items-center mb-6">
+                    <label class="font-semibold font-serif text-lg text-[#333333]" for="mail">E-Mail ID</label>
+                    <input 
+                        class="w-[60%] px-4 py-2 border border-gray-300 rounded-lg text-center shadow-md focus:outline-none focus:ring-2 focus:ring-[#3498db] focus:border-transparent hover:bg-[#f9f9f9] transition duration-300" 
+                        type="email" 
+                        id="mail" 
+                        placeholder="abc@mail.com" 
+                        name="Mail Id">
+                </div>
+                <div class="w-[500px] flex flex-col mb-6">
+                    <label class="font-semibold font-serif text-lg text-[#333333] mb-2" for="operational-hours">Operational Hours <span class="text-red-500">(Required)</span></label>
+                    
+                    <!-- Days Selection -->
+                    <div class="flex flex-wrap gap-3 mb-4">
+                        <div class="flex items-center">
+                            <input 
+                                class="w-4 h-4 border border-gray-300 rounded focus:ring-2 focus:ring-[#3498db]" 
+                                type="checkbox" 
+                                id="monday" 
+                                name="days" 
+                                value="Monday">
+                            <label class="ml-2 text-[#333333] font-medium" for="monday">Monday</label>
+                        </div>
+                        <div class="flex items-center">
+                            <input 
+                                class="w-4 h-4 border border-gray-300 rounded focus:ring-2 focus:ring-[#3498db]" 
+                                type="checkbox" 
+                                id="tuesday" 
+                                name="days" 
+                                value="Tuesday">
+                            <label class="ml-2 text-[#333333] font-medium" for="tuesday">Tuesday</label>
+                        </div>
+                        <div class="flex items-center">
+                            <input 
+                                class="w-4 h-4 border border-gray-300 rounded focus:ring-2 focus:ring-[#3498db]" 
+                                type="checkbox" 
+                                id="wednesday" 
+                                name="days" 
+                                value="wednesday">
+                            <label class="ml-2 text-[#333333] font-medium" for="wednesday">Wednesday</label>
+                        </div>
+                        <div class="flex items-center">
+                            <input 
+                                class="w-4 h-4 border border-gray-300 rounded focus:ring-2 focus:ring-[#3498db]" 
+                                type="checkbox" 
+                                id="thrusday" 
+                                name="days" 
+                                value="thrusday">
+                            <label class="ml-2 text-[#333333] font-medium" for="thrusday">Thrusday</label>
+                        </div>
+                        <div class="flex items-center">
+                            <input 
+                                class="w-4 h-4 border border-gray-300 rounded focus:ring-2 focus:ring-[#3498db]" 
+                                type="checkbox" 
+                                id="friday" 
+                                name="days" 
+                                value="friday">
+                            <label class="ml-2 text-[#333333] font-medium" for="friday">Friday</label>
+                        </div>
+                        <div class="flex items-center">
+                            <input 
+                                class="w-4 h-4 border border-gray-300 rounded focus:ring-2 focus:ring-[#3498db]" 
+                                type="checkbox" 
+                                id="saturday" 
+                                name="days" 
+                                value="saturday">
+                            <label class="ml-2 text-[#333333] font-medium" for="saturday">Saturday</label>
+                        </div>
+                        <div class="flex items-center">
+                            <input 
+                                class="w-4 h-4 border border-gray-300 rounded focus:ring-2 focus:ring-[#3498db]" 
+                                type="checkbox" 
+                                id="sunday" 
+                                name="days" 
+                                value="sunday">
+                            <label class="ml-2 text-[#333333] font-medium" for="sunday">Sunday</label>
+                        </div>
+                    </div>
+                
+                    <!-- Time Range Selection -->
+                    <div class="flex justify-between items-center">
+                        <label class="font-medium text-[#333333]">Time Range</label>
+                        <div class="flex gap-2 items-center w-[60%]">
+                            <input 
+                                class="w-[45%] px-4 py-2 border border-gray-300 rounded-lg text-center shadow-md focus:outline-none focus:ring-2 focus:ring-[#3498db] focus:border-transparent hover:bg-[#f9f9f9] transition duration-300" 
+                                type="time" 
+                                id="start-time" 
+                                name="start-time">
+                            <span class="font-semibold text-[#333333]">–</span>
+                            <input 
+                                class="w-[45%] px-4 py-2 border border-gray-300 rounded-lg text-center shadow-md focus:outline-none focus:ring-2 focus:ring-[#3498db] focus:border-transparent hover:bg-[#f9f9f9] transition duration-300" 
+                                type="time" 
+                                id="end-time" 
+                                name="end-time">
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+            <div class="w-[500px] flex flex-col mb-6">
+                <label class="font-semibold font-serif text-lg text-[#333333] mb-2" for="service-type">Service Type <span class="text-red-500">(Required)</span></label>
+                
+                <!-- Service Type Options -->
+                <div class="flex flex-col gap-3">
+                    <div class="flex items-center">
+                        <input 
+                            class="w-4 h-4 border border-gray-300 rounded focus:ring-2 focus:ring-[#3498db]" 
+                            type="checkbox" 
+                            id="blood-donation" 
+                            name="service-type" 
+                            value="Blood Donation">
+                        <label class="ml-2 text-[#333333] font-medium" for="blood-donation">Blood Donation</label>
+                    </div>
+                    <div class="flex items-center">
+                        <input 
+                            class="w-4 h-4 border border-gray-300 rounded focus:ring-2 focus:ring-[#3498db]" 
+                            type="checkbox" 
+                            id="blood-storage" 
+                            name="service-type" 
+                            value="Blood Storage">
+                        <label class="ml-2 text-[#333333] font-medium" for="blood-storage">Blood Storage</label>
+                    </div>
+                    <div class="flex items-center">
+                        <input 
+                            class="w-4 h-4 border border-gray-300 rounded focus:ring-2 focus:ring-[#3498db]" 
+                            type="checkbox" 
+                            id="plasma-donation" 
+                            name="service-type" 
+                            value="Plasma Donation">
+                        <label class="ml-2 text-[#333333] font-medium" for="plasma-donation">Plasma Donation</label>
+                    </div>
+                    <div class="flex items-center">
+                        <input 
+                            class="w-4 h-4 border border-gray-300 rounded focus:ring-2 focus:ring-[#3498db]" 
+                            type="checkbox" 
+                            id="emergency-services" 
+                            name="service-type" 
+                            value="Emergency Services">
+                        <label class="ml-2 text-[#333333] font-medium" for="emergency-services">Emergency Services</label>
+                    </div>
+                </div>
+            </div>
+            <div class="w-[500px] flex flex-col mb-6">
+                <!-- Types of Blood Available -->
+                <label class="font-semibold font-serif text-lg text-[#333333] mb-2" for="blood-types">Types of Blood Available <span class="text-red-500">(Required)</span></label>
+                <div class="flex flex-wrap gap-3 mb-4">
+                    <!-- Blood Group Checkboxes -->
+                    <div class="flex items-center">
+                        <input 
+                            class="w-4 h-4 border border-gray-300 rounded focus:ring-2 focus:ring-[#3498db]" 
+                            type="checkbox" 
+                            id="a-positive" 
+                            name="blood-types" 
+                            value="A+">
+                        <label class="ml-2 text-[#333333] font-medium" for="a-positive">A+</label>
+                    </div>
+                    <div class="flex items-center">
+                        <input 
+                            class="w-4 h-4 border border-gray-300 rounded focus:ring-2 focus:ring-[#3498db]" 
+                            type="checkbox" 
+                            id="a-negative" 
+                            name="blood-types" 
+                            value="A-">
+                        <label class="ml-2 text-[#333333] font-medium" for="a-negative">A-</label>
+                    </div>
+                    <div class="flex items-center">
+                        <input 
+                            class="w-4 h-4 border border-gray-300 rounded focus:ring-2 focus:ring-[#3498db]" 
+                            type="checkbox" 
+                            id="b-positive" 
+                            name="blood-types" 
+                            value="B+">
+                        <label class="ml-2 text-[#333333] font-medium" for="b-positive">B+</label>
+                    </div>
+                    <div class="flex items-center">
+                        <input 
+                            class="w-4 h-4 border border-gray-300 rounded focus:ring-2 focus:ring-[#3498db]" 
+                            type="checkbox" 
+                            id="b-negative" 
+                            name="blood-types" 
+                            value="B-">
+                        <label class="ml-2 text-[#333333] font-medium" for="b-negative">B-</label>
+                    </div>
+                    <div class="flex items-center">
+                        <input 
+                            class="w-4 h-4 border border-gray-300 rounded focus:ring-2 focus:ring-[#3498db]" 
+                            type="checkbox" 
+                            id="ab-positive" 
+                            name="blood-types" 
+                            value="AB+">
+                        <label class="ml-2 text-[#333333] font-medium" for="ab-positive">AB+</label>
+                    </div>
+                    <div class="flex items-center">
+                        <input 
+                            class="w-4 h-4 border border-gray-300 rounded focus:ring-2 focus:ring-[#3498db]" 
+                            type="checkbox" 
+                            id="ab-negative" 
+                            name="blood-types" 
+                            value="AB-">
+                        <label class="ml-2 text-[#333333] font-medium" for="ab-negative">AB-</label>
+                    </div>
+                    <div class="flex items-center">
+                        <input 
+                            class="w-4 h-4 border border-gray-300 rounded focus:ring-2 focus:ring-[#3498db]" 
+                            type="checkbox" 
+                            id="o-positive" 
+                            name="blood-types" 
+                            value="O+">
+                        <label class="ml-2 text-[#333333] font-medium" for="O-positive">O+</label>
+                    </div>
+                    <div class="flex items-center">
+                        <input 
+                            class="w-4 h-4 border border-gray-300 rounded focus:ring-2 focus:ring-[#3498db]" 
+                            type="checkbox" 
+                            id="o-negative" 
+                            name="blood-types" 
+                            value="O-">
+                        <label class="ml-2 text-[#333333] font-medium" for="o-negative">O-</label>
+                    </div>
+                    
+
+
+
+                    <div class="flex items-center">
+                        <input 
+                            class="w-4 h-4 border border-gray-300 rounded focus:ring-2 focus:ring-[#3498db]" 
+                            type="checkbox" 
+                            id="ab-positive" 
+                            name="blood-types" 
+                            value="AB+">
+                        <label class="ml-2 text-[#333333] font-medium" for="ab-positive">AB+</label>
+                    </div>
+                    <div class="flex items-center">
+                        <input 
+                            class="w-4 h-4 border border-gray-300 rounded focus:ring-2 focus:ring-[#3498db]" 
+                            type="checkbox" 
+                            id="ab-negative" 
+                            name="blood-types" 
+                            value="AB-">
+                        <label class="ml-2 text-[#333333] font-medium" for="ab-negative">AB-</label>
+                    </div>
+                    <div class="flex items-center">
+                        <input 
+                            class="w-4 h-4 border border-gray-300 rounded focus:ring-2 focus:ring-[#3498db]" 
+                            type="checkbox" 
+                            id="o-positive" 
+                            name="blood-types" 
+                            value="O+">
+                        <label class="ml-2 text-[#333333] font-medium" for="o-positive">O+</label>
+                    </div>
+                    <div class="flex items-center">
+                        <input 
+                            class="w-4 h-4 border border-gray-300 rounded focus:ring-2 focus:ring-[#3498db]" 
+                            type="checkbox" 
+                            id="o-negative" 
+                            name="blood-types" 
+                            value="O-">
+                        <label class="ml-2 text-[#333333] font-medium" for="o-negative">O-</label>
+                    </div>
+                </div>
+            
+                <!-- Components Available -->
+                <label class="font-semibold font-serif text-lg text-[#333333] mb-2" for="components">Components Available <span class="text-red-500">(Required)</span></label>
+                <div class="flex flex-col gap-3 mb-4">
+                    <!-- Component Checkboxes -->
+                    <div class="flex items-center">
+                        <input 
+                            class="w-4 h-4 border border-gray-300 rounded focus:ring-2 focus:ring-[#3498db]" 
+                            type="checkbox" 
+                            id="whole-blood" 
+                            name="components" 
+                            value="Whole Blood">
+                        <label class="ml-2 text-[#333333] font-medium" for="whole-blood">Whole Blood</label>
+                    </div>
+                    <div class="flex items-center">
+                        <input 
+                            class="w-4 h-4 border border-gray-300 rounded focus:ring-2 focus:ring-[#3498db]" 
+                            type="checkbox" 
+                            id="plasma" 
+                            name="components" 
+                            value="Plasma">
+                        <label class="ml-2 text-[#333333] font-medium" for="plasma">Plasma</label>
+                    </div>
+                    <div class="flex items-center">
+                        <input 
+                            class="w-4 h-4 border border-gray-300 rounded focus:ring-2 focus:ring-[#3498db]" 
+                            type="checkbox" 
+                            id="platelets" 
+                            name="components" 
+                            value="Platelets">
+                        <label class="ml-2 text-[#333333] font-medium" for="platelets">Platelets</label>
+                    </div>
+                    <div class="flex items-center">
+                        <input 
+                            class="w-4 h-4 border border-gray-300 rounded focus:ring-2 focus:ring-[#3498db]" 
+                            type="checkbox" 
+                            id="cryoprecipitate" 
+                            name="components" 
+                            value="Cryoprecipitate">
+                        <label class="ml-2 text-[#333333] font-medium" for="cryoprecipitate">Cryoprecipitate</label>
+                    </div>
+                    <div class="flex items-center">
+                        <input 
+                            class="w-4 h-4 border border-gray-300 rounded focus:ring-2 focus:ring-[#3498db]" 
+                            type="checkbox" 
+                            id="rbc" 
+                            name="components" 
+                            value="Red Blood Cells (RBC)">
+                        <label class="ml-2 text-[#333333] font-medium" for="rbc">Red Blood Cells (RBC)</label>
+                    </div>
+                </div>
+            
+                <!-- Average Daily/Weekly Stock Capacity -->
+                <label class="font-semibold font-serif text-lg text-[#333333] mb-2" for="stock-capacity">Average Daily/Weekly Stock Capacity <span class="text-gray-500">(Optional)</span></label>
+                <input 
+                    class="w-full px-4 py-2 border border-gray-300 rounded-lg text-center shadow-md focus:outline-none focus:ring-2 focus:ring-[#3498db] focus:border-transparent hover:bg-[#f9f9f9] transition duration-300" 
+                    type="number" 
+                    id="stock-capacity" 
+                    name="stock-capacity" 
+                    placeholder="Enter approximate capacity">
+
+                    <div class="w-[500px] flex flex-col mb-6">
+                        <!-- Username -->
+                        <label class="font-semibold font-serif text-lg text-[#333333] mb-2" for="username">Username <span class="text-red-500">(Required)</span></label>
+                        <input 
+                            class="w-full px-4 py-2 border border-gray-300 rounded-lg text-center shadow-md focus:outline-none focus:ring-2 focus:ring-[#3498db] focus:border-transparent hover:bg-[#f9f9f9] transition duration-300" 
+                            type="text" 
+                            id="username" 
+                            name="username" 
+                            placeholder="Enter your username" 
+                            required>
+                        
+                        <!-- Password -->
+                        <label class="font-semibold font-serif text-lg text-[#333333] mt-4 mb-2" for="password">Password <span class="text-red-500">(Required)</span></label>
+                        <input 
+                            class="w-full px-4 py-2 border border-gray-300 rounded-lg text-center shadow-md focus:outline-none focus:ring-2 focus:ring-[#3498db] focus:border-transparent hover:bg-[#f9f9f9] transition duration-300" 
+                            type="password" 
+                            id="password" 
+                            name="password" 
+                            placeholder="Enter your password" 
+                            required>
+                        
+                        <!-- Confirm Password -->
+                        <label class="font-semibold font-serif text-lg text-[#333333] mt-4 mb-2" for="confirm-password">Confirm Password <span class="text-red-500">(Required)</span></label>
+                        <input 
+                            class="w-full px-4 py-2 border border-gray-300 rounded-lg text-center shadow-md focus:outline-none focus:ring-2 focus:ring-[#3498db] focus:border-transparent hover:bg-[#f9f9f9] transition duration-300" 
+                            type="password" 
+                            id="confirm-password" 
+                            name="confirm-password" 
+                            placeholder="Re-enter your password" 
+                            required>
+                    </div>
+                    <!-- Buttons -->
+            <div class="flex justify-around w-[50%] mt-6 mb-[300px]">
+                <button 
+                    type="submit" 
+                    class="bg-[#3498db] text-white font-semibold py-2 px-6 rounded-lg shadow-md hover:bg-[#2980b9] transition duration-300">
+                    Submit
+                </button>
+                <button 
+                    type="reset" 
+                    class="bg-gray-400 text-white font-semibold py-2 px-6 rounded-lg shadow-md hover:bg-gray-500 transition duration-300">
+                    Reset
+                </button>
+            </div>
+                    
+            </div>
+
+
+        </div>
+
+
+
+    </div>
+    
+</body>
+</html>
